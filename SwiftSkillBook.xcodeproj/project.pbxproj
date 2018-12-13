@@ -47,6 +47,7 @@
 		2B62F96E21C1E4A2000AA813 /* SwiftSkillBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSkillBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B62F97221C1E4A2000AA813 /* SwiftSkillBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSkillBookUITests.swift; sourceTree = "<group>"; };
 		2B62F97421C1E4A2000AA813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B62F98021C1E4C9000AA813 /* SwiftSkillBook.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftSkillBook.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +78,7 @@
 		2B62F94621C1E49F000AA813 = {
 			isa = PBXGroup;
 			children = (
+				2B62F98021C1E4C9000AA813 /* SwiftSkillBook.playground */,
 				2B62F95121C1E49F000AA813 /* SwiftSkillBook */,
 				2B62F96621C1E4A2000AA813 /* SwiftSkillBookTests */,
 				2B62F97121C1E4A2000AA813 /* SwiftSkillBookUITests */,
