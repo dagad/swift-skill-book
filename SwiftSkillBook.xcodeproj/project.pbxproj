@@ -16,6 +16,7 @@
 		2B62F96821C1E4A2000AA813 /* SwiftSkillBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B62F96721C1E4A2000AA813 /* SwiftSkillBookTests.swift */; };
 		2B62F97321C1E4A2000AA813 /* SwiftSkillBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B62F97221C1E4A2000AA813 /* SwiftSkillBookUITests.swift */; };
 		2B62F98321C1EF81000AA813 /* ErrorControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B62F98221C1EF81000AA813 /* ErrorControl.swift */; };
+		2B7D2E3A21DC5F5500FB7304 /* NavigationInSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7D2E3921DC5F5500FB7304 /* NavigationInSwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		2B62F97421C1E4A2000AA813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B62F98021C1E4C9000AA813 /* SwiftSkillBook.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftSkillBook.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2B62F98221C1EF81000AA813 /* ErrorControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorControl.swift; sourceTree = "<group>"; };
+		2B7D2E3921DC5F5500FB7304 /* NavigationInSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationInSwift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		2B62F95121C1E49F000AA813 /* SwiftSkillBook */ = {
 			isa = PBXGroup;
 			children = (
+				2B7D2E3821DC5F1200FB7304 /* Navigation */,
 				2B06D7DF21C9D3B900682B00 /* Protocol */,
 				2B62F98121C1EF6D000AA813 /* ErrorControl */,
 				2B62F95221C1E49F000AA813 /* AppDelegate.swift */,
@@ -147,6 +150,14 @@
 				2B62F98221C1EF81000AA813 /* ErrorControl.swift */,
 			);
 			path = ErrorControl;
+			sourceTree = "<group>";
+		};
+		2B7D2E3821DC5F1200FB7304 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				2B7D2E3921DC5F5500FB7304 /* NavigationInSwift.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +293,7 @@
 			files = (
 				2B62F95521C1E49F000AA813 /* ViewController.swift in Sources */,
 				2B06D7E121C9D3E000682B00 /* SpecializingProtocols.swift in Sources */,
+				2B7D2E3A21DC5F5500FB7304 /* NavigationInSwift.swift in Sources */,
 				2B62F95321C1E49F000AA813 /* AppDelegate.swift in Sources */,
 				2B62F98321C1EF81000AA813 /* ErrorControl.swift in Sources */,
 			);
