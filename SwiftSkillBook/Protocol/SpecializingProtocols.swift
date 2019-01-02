@@ -25,44 +25,86 @@
 import UIKit
 
 protocol User {
-    var id: UUID { get }
+    var id: String { get }
     var name: String { get }
 }
 
-extension AnonymousUser: User {}
-extension Member: User {}
-extension Admin: User {}
+
+class AnonymousUser {}
+extension AnonymousUser: User {
+    var id: String {
+        return "AnonymousUser"
+    }
+
+    var name: String {
+        return "AnonymousUser"
+    }
+}
+
+class Member {}
+extension Member: User {
+    var id: String {
+        return "Member"
+    }
+
+    var name: String {
+        return "Member"
+    }
+}
+
+class Admin {}
+extension Admin: User {
+    var id: String {
+        return "Admin"
+    }
+
+    var name: String {
+        return "Admin"
+    }
+}
 
 /*
  추가적으로 만약 AnonymousUser는 모르게 Member, Admin 에만 추가 기능을 넣고 싶다면 어떻게 해야할까?
  */
 
 protocol AuthenticatedUser: User {
+    associatedtype AccessToken
     var accessToken: AccessToken { get }
 }
 
-extension Member: AuthenticatedUser {}
-extension Admin: AuthenticatedUser {}
+extension Member: AuthenticatedUser {
+    typealias AccessToken = String
+    var accessToken: String {
+        return "accessToken"
+    }
+}
+extension Admin: AuthenticatedUser {
+    typealias AccessToken = String
+    var accessToken: String {
+        return "accessToken"
+    }
+}
 
 
 /*
  위와 같이 한다면 AnonymousUser는 모르게 원하는 기능을 구분지을 수 있다.
  그리고 아래와 같이 사용할 수 있다.
- */
 
 class DataLoader {
+
     func load(from endpoint: ProtectedEndpoint,
               onBehalfOf user: AuthenticatedUser,
               then: @escaping (Result<Data>) -> Void) {
         // Since 'AuthenticatedUser' inherits from 'User', we
         // get full access to all properties from both protocols.
-        let request = makeRequest(for: endpoint,
-        userID: user.id,
-        accessToken: user.accessToken)
 
-        ...
+        let request = makeRequest(for: endpoint, userID: user.id, accessToken: user.accessToken)
+
+        //...
     }
 }
+ */
+
 
 //Specialization
 
@@ -144,7 +186,7 @@ protocol Performable {
 }
 
 // 그리고 표준 라이브러리와 동일하게 3개로 나뉘어진 프로토콜을 합쳐 기존 프로토콜을 사용하는 부분에서 그대로 사용할 수 있게 할 수 있다.
-typealias Operation = Preparable & Cancellable & Performable
+typealias NewOperation = Preparable & Cancellable & Performable
 
 // 그리고 나뉘어진 각 3개의 프로토콜을 원하는 곳에서 사용할 수 있다.
 extension Sequence where Element == Cancellable {
