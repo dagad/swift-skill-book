@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2B06D7E121C9D3E000682B00 /* SpecializingProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B06D7E021C9D3E000682B00 /* SpecializingProtocols.swift */; };
+		2B505C612226264C0021F6C2 /* ProtocolPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B505C602226264C0021F6C2 /* ProtocolPractice.swift */; };
 		2B62F95321C1E49F000AA813 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B62F95221C1E49F000AA813 /* AppDelegate.swift */; };
 		2B62F95521C1E49F000AA813 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B62F95421C1E49F000AA813 /* ViewController.swift */; };
 		2B62F95821C1E49F000AA813 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B62F95621C1E49F000AA813 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		2B06D7E021C9D3E000682B00 /* SpecializingProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecializingProtocols.swift; sourceTree = "<group>"; };
+		2B505C602226264C0021F6C2 /* ProtocolPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolPractice.swift; sourceTree = "<group>"; };
 		2B62F94F21C1E49F000AA813 /* SwiftSkillBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSkillBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B62F95221C1E49F000AA813 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B62F95421C1E49F000AA813 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +91,14 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
+		2B505C62222626550021F6C2 /* ProtocolPractice */ = {
+			isa = PBXGroup;
+			children = (
+				2B505C602226264C0021F6C2 /* ProtocolPractice.swift */,
+			);
+			path = ProtocolPractice;
+			sourceTree = "<group>";
+		};
 		2B62F94621C1E49F000AA813 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +123,7 @@
 		2B62F95121C1E49F000AA813 /* SwiftSkillBook */ = {
 			isa = PBXGroup;
 			children = (
+				2B505C62222626550021F6C2 /* ProtocolPractice */,
 				2B7D2E3821DC5F1200FB7304 /* Navigation */,
 				2B06D7DF21C9D3B900682B00 /* Protocol */,
 				2B62F98121C1EF6D000AA813 /* ErrorControl */,
@@ -293,6 +304,7 @@
 			files = (
 				2B62F95521C1E49F000AA813 /* ViewController.swift in Sources */,
 				2B06D7E121C9D3E000682B00 /* SpecializingProtocols.swift in Sources */,
+				2B505C612226264C0021F6C2 /* ProtocolPractice.swift in Sources */,
 				2B7D2E3A21DC5F5500FB7304 /* NavigationInSwift.swift in Sources */,
 				2B62F95321C1E49F000AA813 /* AppDelegate.swift in Sources */,
 				2B62F98321C1EF81000AA813 /* ErrorControl.swift in Sources */,
